@@ -24,10 +24,10 @@
 				</div>
 				<div class="own-size"></div>
 				<div class="own-size even"></div>
-				<div class="hard fixed back-side p21">
+				<div class="hard fixed back-side p17">
 					<div class="depth"></div>
 				</div>
-				<div class="hard p22"></div>
+				<div class="hard p18"></div>
 			</div>
 		</div>
 	</div>
@@ -156,7 +156,7 @@
 				autoCenter: true,
 				gradients: true,
 				duration: 1000,
-				pages: 22,
+				pages: 18,
 				when: {
 					turning: function (e, page, view) {
 						var book = $(this),
@@ -197,8 +197,8 @@
 						else $(".fp-book .p2").removeClass("fixed");
 
 						if (page < book.turn("pages"))
-							$(".fp-book .p21").addClass("fixed");
-						else $(".fp-book .p21").removeClass("fixed");
+							$(".fp-book .p17").addClass("fixed");
+						else $(".fp-book .p17").removeClass("fixed");
 
 						Hash.go("page/" + page).update();
 					},
